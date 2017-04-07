@@ -12,6 +12,16 @@ module.exports = {
   module: {
     rules: [
       {
+        enforce: 'pre',
+        test: /\.js$/,
+        loader: "source-map-loader"
+      },
+      {
+        enforce: 'pre',
+        test: /\.tsx?$/,
+        use: "source-map-loader"
+      },
+      {
         test: /\.tsx?$/,
         loader: 'awesome-typescript-loader',
         exclude: /node_modules/,
@@ -21,4 +31,5 @@ module.exports = {
   resolve: {
     extensions: [".tsx", ".ts", ".js"]
   },
+  devtool: 'cheap-module-eval-source-map'
 };
