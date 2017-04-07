@@ -1,0 +1,21 @@
+{
+  "name": "react-typescript-webpack2-boilerplate",
+  "version": "1.0.0",
+  "description": "Yet another React + Typescript + Webpack 2 boilerplate",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React",
+    "Typescript",
+    "Webpack",
+    "HMR",
+    "hot",
+    "module",
+    "reloading",
+    "tsx"
+  ],
+  "author": "optimusway",
+  "license": "MIT"
+}
