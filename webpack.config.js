@@ -1,9 +1,9 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  context: path.join(__dirname, './src'),
   entry: {
-    app: './index.tsx',
+    app: path.join(__dirname, './src', './index.tsx'),
   },
   output: {
     filename: '[name].js',
@@ -31,5 +31,10 @@ module.exports = {
   resolve: {
     extensions: [".tsx", ".ts", ".js"]
   },
-  devtool: 'cheap-module-eval-source-map'
+  devtool: 'cheap-module-eval-source-map',
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public', 'index.html')
+    })
+  ]
 };

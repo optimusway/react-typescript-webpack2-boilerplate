@@ -12,12 +12,12 @@ export class Counter extends React.Component<CounterProps, CounterState> {
   constructor(props: CounterProps) {
     super(props);
     this.state = {
-      value: Number(props.inititalValue || 0),
+      value: props.inititalValue || 0,
     };
   }
 
-  increment = () => this.setState({value: this.state.value + 1});
-  decrement = () => this.setState({value: this.state.value - 1});
+  increment = () => this.setState({ value: this.state.value + 1 });
+  decrement = () => this.setState({ value: this.state.value - 1 });
 
   render() {
     return (
