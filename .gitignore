@@ -1,5 +1,6 @@
-# Packages
+# npm
 node_modules/
+npm-debug.log
 
 # Build assets
 [Dd]ist/
