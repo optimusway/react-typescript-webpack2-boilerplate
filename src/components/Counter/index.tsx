@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './style.css';
 
 interface CounterProps {
   inititalValue?: number;
@@ -22,7 +23,7 @@ export class Counter extends React.Component<CounterProps, CounterState> {
   render() {
     return (
       <div className="counter">
-        <h1>{this.state.value}</h1>
+        <h1 className="counter__value">{this.state.value}</h1>
         <button className="btn" onClick={this.increment}>Increment</button>
         <button className="btn" onClick={this.decrement}>Decrement</button>
       </div>

@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -26,6 +27,12 @@ module.exports = {
         loader: 'awesome-typescript-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.css$/,
+        use: ExtractTextPlugin.extract({
+          use: 'css-loader'
+        })
+      }
     ]
   },
   resolve: {
@@ -35,6 +42,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, './public', 'index.html')
-    })
+    }),
+    new ExtractTextPlugin('styles.css'),
   ]
 };

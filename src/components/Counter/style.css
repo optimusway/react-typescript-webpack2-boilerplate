@@ -1,0 +1,9 @@
+.counter {
+  margin: 0;
+  padding: 10px;
+}
+
+.counter__value {
+  font-size: 48px;
+  margin-top: 0;
+}
