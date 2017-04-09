@@ -7,5 +7,8 @@ Lean React + Typescript + Webpack 2 bolerplate
 1. Run sample app with `npm start`
 1. Check your app running on `http://localhost:3000`
 
+## TODO
+- [ ] Add HMR
+
 ## License
 MIT
