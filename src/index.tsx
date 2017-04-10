@@ -3,18 +3,18 @@ import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 import { App } from './containers/App/index';
 
-const renderApp = (app: any) => render(
+const renderApp = (App: any) => render(
   <AppContainer>
-    {app}
+    <App />
   </AppContainer>,
   document.getElementById('root'),
 );
 
-renderApp(<App />);
+renderApp(App);
 
 if (module.hot) {
   module.hot.accept('./containers/App', () => {
     const newApp = require('./containers/App').default;
-    renderApp(React.createElement(newApp));
+    renderApp(newApp);
   });
 }
