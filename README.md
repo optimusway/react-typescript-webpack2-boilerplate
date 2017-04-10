@@ -1,14 +1,26 @@
-# React, Typescript and Webpack 2 starter kit
-Lean React + Typescript + Webpack 2 bolerplate
+# react-typescript-webpack2-boilerplate
+Lean and efficient boilerplate for jumpstart with React + Typescript + Webpack 2 with HMP.
+
+## Prerequisites
+- Node
+- npm
+
+## What's included
+- React
+- Typescript 2.x
+- Webpack 2.x
+- HMR w/ react-hot-loader@next
+- Awesome TypeScript loader
+- TSLint
 
 ## Getting started
-1. Clone the repository and switch to the directory
+1. Clone the repository
 1. Install packages with `npm install`
-1. Run sample app with `npm start`
-1. Check your app running on `http://localhost:3000`
+1. Run the app with `npm start`
+1. Check your browser at `http://localhost:3000`
 
 ## TODO
-- [ ] Add HMR
+- [x] Add HMR
 
 ## License
 MIT
