@@ -7,16 +7,6 @@ module.exports = {
   entry: {
     app: [
       'react-hot-loader/patch',
-      // activate HMR for React
-
-      'webpack-dev-server/client?http://localhost:3000',
-      // bundle the client for webpack-dev-server
-      // and connect to the provided endpoint
-
-      'webpack/hot/only-dev-server',
-      // bundle the client for hot reloading
-      // only- means to only hot reload for successful updates
-
       path.join(__dirname, './src', './index.tsx'),
     ]
   },
@@ -59,17 +49,10 @@ module.exports = {
   devtool: 'cheap-module-eval-source-map',
   devServer: {
     hot: true,
-
-    contentBase: path.resolve(__dirname, './dist'),
-    // match the output path
-
-    publicPath: '/'
-    // match the output `publicPath`
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    // enable HMR globally
-
+    new webpack.NamedModulesPlugin(),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, './public', 'index.html')
     }),
