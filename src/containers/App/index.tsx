@@ -1,11 +1,10 @@
 import * as React from 'react';
+import { Counter } from '../../components/Counter/index';
 
-export class App extends React.Component<{}, {}> {
-  render() {
-    return (
-      <div className="container">
-        {this.props.children}
-      </div>
-    );
-  }
-}
+export const App = () => (
+  <div className="container">
+    <Counter />
+  </div>
+);
+
+export default App;
