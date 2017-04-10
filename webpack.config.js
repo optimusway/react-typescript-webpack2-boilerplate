@@ -3,6 +3,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+const isProduction = process.env.NODE_ENV === 'production';
+
 module.exports = {
   entry: {
     app: [
@@ -38,6 +40,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
           use: 'css-loader'
         })
       }
@@ -56,6 +59,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, './public', 'index.html')
     }),
-    new ExtractTextPlugin('styles.css'),
+    new ExtractTextPlugin({
+      filename: 'styles.css',
+      disable: !isProduction
+    }),
   ]
 };
