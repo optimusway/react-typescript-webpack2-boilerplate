@@ -1,6 +1,8 @@
 # react-typescript-webpack2-boilerplate
 Leankit for quick start with React/Typescript/Webpack.
 
+[![Build Status](https://travis-ci.org/optimusway/react-typescript-webpack2-boilerplate.svg?branch=master)](https://travis-ci.org/optimusway/react-typescript-webpack2-boilerplate)
+
 ## Prerequisites
 - Node
 - npm
