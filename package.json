@@ -5,6 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "start": "webpack-dev-server --port 3000",
+    "build": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

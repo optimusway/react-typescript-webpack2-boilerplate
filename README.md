@@ -1,5 +1,5 @@
 # react-typescript-webpack2-boilerplate
-Leankit for starting with React/Typescript/Webpack.
+Leankit for quick start with React/Typescript/Webpack.
 
 ## Prerequisites
 - Node
@@ -21,6 +21,7 @@ Leankit for starting with React/Typescript/Webpack.
 
 ## TODO
 - [x] Add HMR
+- [ ] Add Yarn support
 
 ## License
 MIT
