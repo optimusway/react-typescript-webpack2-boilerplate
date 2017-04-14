@@ -1,11 +1,11 @@
 # react-typescript-webpack2-boilerplate
-Lean and efficient boilerplate for jumpstart with React + Typescript + Webpack 2 with HMP.
+Leankit for starting with React/Typescript/Webpack.
 
 ## Prerequisites
 - Node
 - npm
 
-## What's included
+## What's inside
 - React
 - Typescript 2.x
 - Webpack 2.x
