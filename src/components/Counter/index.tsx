@@ -2,7 +2,7 @@ import * as React from 'react';
 import './style.css';
 
 interface CounterProps {
-  inititalValue?: number;
+  initialValue?: number;
 }
 
 interface CounterState {
@@ -13,7 +13,7 @@ export class Counter extends React.Component<CounterProps, CounterState> {
   constructor(props: CounterProps) {
     super(props);
     this.state = {
-      value: props.inititalValue || 0,
+      value: props.initialValue || 0,
     };
   }
 
